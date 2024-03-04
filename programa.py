@@ -30,3 +30,5 @@ if posiciones:
   print(f"El elemento {elemento} se encuentra en las posiciones:", posiciones)
 else:
   print(f"El elemento {elemento} no se encuentra en la matriz.")
+
+  #subir
