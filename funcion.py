@@ -3,9 +3,9 @@ def calcut(ciudades, semanas, temperaturas):
     Calcula la temperatura promedio de una ciudad durante un período de tiempo.
     Imprimir promedio de cada ciudad
     """
-    promedios = {}
+    ciudades_promedio = {}
     for ciudad in ciudades:
-        promedios[ciudad] = []
+        ciudades_promedio[ciudad] = []
         for semana in semanas:
             # Obtener las temperaturas de la ciudad y semana actual
             temps = temperaturas[ciudad][semana]
@@ -16,8 +16,8 @@ def calcut(ciudades, semanas, temperaturas):
 
             # Calcular el promedio de las temperaturas
             promedio = sum(temps) / len(temps)
-            promedios[ciudad].append(promedio)
-    return promedios
+            ciudades_promedio[ciudad].append(promedio)
+    return ciudades_promedio
 
 
 # Ejemplo de uso
